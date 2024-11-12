@@ -12,8 +12,8 @@ Adafruit_BMP085 bmp;
 ESP8266WebServer server(80);
 WiFiClient cliente;//creamos un cliente
 
-const char* ssid     = "Fibertel WiFi352 2.4GHz";
-const char* password = "0049353561";
+const char* ssid     = "nombre de tu red";
+const char* password = "contraseña de tu red";
 // Funcion que se ejecutara en la URI '/'
 void PaginaWeb() 
 {
