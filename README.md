@@ -1,14 +1,17 @@
 ## 2.1. Conexionado: Alimentación y Datos
 Wemos D1 Mini:
+
 Utilizamos una alimentación de 5V proporcionada por una computadora estándar, mediante un puerto USB.
 
 Sensor LDR:
+
 Es alimentado por 3.3V mediante el microcontrolador.
 Es necesaria la colocación de una resistencia 1k ohm en serie entre la fuente y el sensor.
 Utiliza el pin A0 para la transmisión de datos.
 
 
 Sensor DHT11:
+
 Es alimentado por 3.3V mediante el microcontrolador.
 Es necesaria la colocación de una resistencia de 4k7 ohm en serie entre la fuente y el sensor.
 Utiliza el pin D1(GPIO 16) para la transmisión de datos.
@@ -58,10 +61,12 @@ Una de nuestras dificultades fue la mala conexión del pin y el microprocesador 
 Si el código fue compilado correctamente y el microcontrolador no está mostrando respuestas, estas pueden ser algunas soluciones:
 
 **Resetear el Wemos D1 Mini**
+
 El proyecto fue configurado para que en caso que no haya una conexión entre la red y el micro, se genera un mensaje de la forma:.
 Si el problema no es la red y persiste, puede que sea solo una falla de conexión por parte del micro que se solucione con un simple reseteo; para ello solo basta con pulsar el botón de reset que viene incluido en el dispositivo.
 
 **Mala calibración**
+
 Si el código y el programa de programación están configurados a distintas velocidades, se obtendrán respuestas de la forma 
 Para solucionar este problema, se debe mantener todo el proyecto a la misma velocidad. Este punto se especifica en el apartado 2.5 Calibración.
 
@@ -78,6 +83,7 @@ void setup()
 Las dos opciones de velocidades utilizadas para proyectos en Arduino IDE son 9600 baudios y 115200 baudios. Esta última es más rápida y, en caso de utilizarla, deberá configurar el código. 
 
 **Consideraciones al Cambiar la Velocidad de Transmisión**
+
 Asegúrate de que el dispositivo al que se conecta el microcontrolador esté configurado a la misma velocidad de baudios.
 Si utilizas el monitor serial del IDE de Arduino, selecciona en el menú desplegable la misma velocidad que configuraste en el código (9600, 115200.).
 Ten en cuenta que velocidades más altas permiten transferir datos más rápido, pero en algunos dispositivos o entornos pueden producir errores de transmisión si la comunicación no es estable.
