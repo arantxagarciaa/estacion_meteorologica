@@ -43,7 +43,8 @@ Finalmente se puede visualizar la página web.
 Para ver la api, basta con poner su IP /api en el buscador. Aparecerá una página similar a la adjuntada:
 
 ## 2.4. Procedimientos ante fallas del equipo y/o para funciones específicas.
-Verificar que todas las librerías estén instaladas.
+###  - Verificar que todas las librerías estén instaladas.
+
 Adjuntamos las librerías utilizadas donde se especifica cómo instalarlas:
 
 https://github.com/esp8266/Arduino
@@ -58,7 +59,7 @@ Normalmente no se utiliza el pin D0 (GPIO 16) para las conexiones de sensores, e
 Comprobar que todos los pines hayan sido soldados correctamente. 
 Una de nuestras dificultades fue la mala conexión del pin y el microprocesador por mala soldadura, lo que nos atrasó el tiempo de finalizado del proyecto. Pudimos encontrar esta falla ya que al conectar el micro a una protoboard, este pin fue sacado de su lugar.  Otra forma de enterarse es viendo el led del DHT11, pues con una buena conexión, este queda encendido constantemente. En caso de titilar o no encenderse, verificar la conexión de los pines del sensor o del Wemos D1 Mini.
 
-### Mal llamado de los pines
+### -  Mal llamado de los pines
 
 Las librerias de Esp8266 y Esp32 utilizan el numero de GPIO para el llamado de sus pines. En caso de escribir el numero de pin, es necesario para su funcionamiento cambiarlo al numero de gpio.
 
@@ -81,7 +82,7 @@ int pinDHT11 = D0; ----> int pinDHT11 = 16;
 | D7       | GPIO13               |
 | D8       | GPIO15               |
 
-### El serial monitor no muestra una respuesta.
+###  - El serial monitor no muestra una respuesta.
 Si el código fue compilado correctamente y el microcontrolador no está mostrando respuestas, estas pueden ser algunas soluciones:
 
 **Resetear el Wemos D1 Mini**
